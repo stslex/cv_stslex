@@ -5,6 +5,96 @@
       rel="shortcut icon"
       href="https://www.gstatic.com/devrel-devsite/prod/v007b6b9ca3b0c540f1a70d3d8e9cb4ae5fe8301ccf9dd34be407e5b8cb6b5dac/android/images/favicon.png"
     />
+    <style>
+      @font-face {
+        font-family: open_sans_regular;
+        src: url(font/OpenSans-Regular.ttf);
+      }
+      @font-face {
+        font-family: jetbrains_mono_regular;
+        src: url(font/JetBrainsMono-Regular.ttf);
+      }
+
+      .title {
+        align-self: stretch;
+        color: white;
+        font-size: 20px;
+        font-family: open_sans_regular;
+        font-weight: 700;
+        word-wrap: break-word;
+      }
+      .subtitle {
+        align-self: stretch;
+        color: white;
+        font-size: 16px;
+        font-family: open_sans_regular;
+        font-weight: 600;
+        word-wrap: break-word;
+      }
+      .text {
+        align-self: stretch;
+        color: white;
+        font-size: 16px;
+        font-family: open_sans_regular;
+        font-weight: 400;
+        word-wrap: break-word;
+      }
+      .caption {
+        align-self: stretch;
+        color: white;
+        font-size: 14px;
+        font-family: open_sans_regular;
+        font-weight: 400;
+        word-wrap: break-word;
+      }
+      .code {
+        align-self: stretch;
+        color: white;
+        font-size: 16px;
+        font-family: jetbrains_mono_regular;
+        font-weight: 400;
+        word-wrap: break-word;
+      }
+      .card_small {
+        align-self: stretch;
+        padding: 16px;
+        background: #28292a;
+        border-radius: 16px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+        display: flex;
+      }
+      .card_big {
+        align-self: stretch;
+        height: wrap-content;
+        padding: 16px;
+        background: #28292a;
+        border-radius: 16px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+        display: flex;
+      }
+      .icon_text {
+        align-self: stretch;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 8px;
+        display: inline-flex;
+      }
+      .text_link {
+        align-self: stretch;
+        color: #dadeff;
+        font-size: 16px;
+        font-family: open_sans_regular;
+        font-weight: 400;
+        text-decoration: underline;
+        word-wrap: break-word;
+      }
+    </style>
   </head>
   <body
     style="
@@ -26,365 +116,93 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 16px;
-        display: inline-flex;
+        display: flex;
       "
     >
-      <div
-        style="
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          gap: 16px;
-          display: inline-flex;
-        "
-      >
+      <div style="flex-direction: column; gap: 16px; display: flex; width: 300">
         <img
           style="
-            width: 300px;
-            height: 400px;
+            width: 100%;
+            height: 100%;
             border-radius: 16px;
-            border: 1px rgba(255, 255, 255, 0.5) solid;
+            position: relative;
           "
           src="cv_avatar.jpeg"
         />
-        <div
-          style="
-            align-self: stretch;
-            height: wrap-content;
-            padding: 16px;
-            background: #28292a;
-            border-radius: 16px;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 16px;
-            display: flex;
-          "
-        >
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 20px;
-              font-family: Open Sans;
-              font-weight: 700;
-              word-wrap: break-word;
-            "
-          >
-            Контакты
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              justify-content: flex-start;
-              align-items: flex-start;
-              gap: 16px;
-              display: inline-flex;
-            "
-          >
+        <div class="card_small">
+          <div class="title">Контакты</div>
+          <div class="icon_text">
             <img
               style="width: 24px; height: 24px; position: relative"
               src="ic_phone.svg"
             />
-            <div
-              style="
-                flex: 1 1 0;
-                align-self: stretch;
-                color: white;
-                font-size: 16px;
-                font-family: Open Sans;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              +7 (995) 607 12 58
-            </div>
+            <a href="tel:+79956071258" class="text_link">+7 (995) 607 12 58</a>
           </div>
-          <div
-            style="
-              align-self: stretch;
-              justify-content: flex-start;
-              align-items: flex-start;
-              gap: 16px;
-              display: inline-flex;
-            "
-          >
+          <div class="icon_text">
             <img
               style="width: 24px; height: 24px; position: relative"
               src="ic_github.svg"
             />
-            <div>
-              <a
-                href="https://github.com/stslex"
-                target="_blank"
-                style="
-                  flex: 1 1 0;
-                  align-self: stretch;
-                  color: #dadeff;
-                  font-size: 16px;
-                  font-family: Open Sans;
-                  font-weight: 400;
-                  text-decoration: underline;
-                  word-wrap: break-word;
-                "
-                >stslex</a
-              >
-            </div>
+            <a href="https://github.com/stslex" class="text_link">stslex</a>
           </div>
-          <div
-            style="
-              align-self: stretch;
-              justify-content: flex-start;
-              align-items: flex-start;
-              gap: 16px;
-              display: inline-flex;
-            "
-          >
+          <div class="icon_text">
             <img
               style="width: 24px; height: 24px; position: relative"
               src="ic_play_market.svg"
             />
-            <div
-              style="
-                flex: 1 1 0;
-                align-self: stretch;
-                color: #dadeff;
-                font-size: 16px;
-                font-family: Open Sans;
-                font-weight: 400;
-                text-decoration: underline;
-                word-wrap: break-word;
-              "
+            <a
+              href="https://play.google.com/store/apps/dev?id=8790856954691512377"
+              class="text_link"
             >
               play market
-            </div>
+            </a>
           </div>
-          <div
-            style="
-              align-self: stretch;
-              justify-content: flex-start;
-              align-items: flex-start;
-              gap: 16px;
-              display: inline-flex;
-            "
-          >
+          <div class="icon_text">
             <img
               style="width: 24px; height: 24px; position: relative"
               src="ic_telegram.svg"
             />
-            <div
-              style="
-                flex: 1 1 0;
-                align-self: stretch;
-                color: #dadeff;
-                font-size: 16px;
-                font-family: Open Sans;
-                font-weight: 400;
-                text-decoration: underline;
-                word-wrap: break-word;
-              "
-            >
-              stslex
-            </div>
+            <a href="https://t.me/StSlex" class="text_link"> stslex </a>
           </div>
-          <div
-            style="
-              align-self: stretch;
-              justify-content: flex-start;
-              align-items: flex-start;
-              gap: 16px;
-              display: inline-flex;
-            "
-          >
+          <div class="icon_text">
             <img
               style="width: 24px; height: 24px; position: relative"
               src="ic_linked_in.svg"
             />
-            <div
-              style="
-                flex: 1 1 0;
-                align-self: stretch;
-                color: #dadeff;
-                font-size: 16px;
-                font-family: Open Sans;
-                font-weight: 400;
-                text-decoration: underline;
-                word-wrap: break-word;
-              "
+            <a
+              href="https://www.linkedin.com/in/ilya-stepanyuk-950800214"
+              class="text_link"
             >
               LinkedIn
-            </div>
+            </a>
           </div>
-          <div
-            style="
-              align-self: stretch;
-              justify-content: flex-start;
-              align-items: flex-start;
-              gap: 16px;
-              display: inline-flex;
-            "
-          >
+          <div class="icon_text_small">
             <img
               style="width: 24px; height: 24px; position: relative"
               src="ic_gmail.svg"
             />
-            <div
-              style="
-                flex: 1 1 0;
-                align-self: stretch;
-                color: #dadeff;
-                font-size: 16px;
-                font-family: Open Sans;
-                font-weight: 400;
-                text-decoration: underline;
-                word-wrap: break-word;
-              "
-            >
+            <a href="ilya977.077@gmail.com" class="text_link">
               ilya977.077@gmail.com
-            </div>
+            </a>
           </div>
         </div>
-        <div
-          style="
-            align-self: stretch;
-            height: wrap-content;
-            padding: 16px;
-            background: #28292a;
-            border-radius: 16px;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 16px;
-            display: flex;
-          "
-        >
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 20px;
-              font-family: Open Sans;
-              font-weight: 700;
-              word-wrap: break-word;
-            "
-          >
-            Образование
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              height: 32px;
-              color: white;
-              font-size: 16px;
-              font-family: Open Sans;
-              font-weight: 600;
-              word-wrap: break-word;
-            "
-          >
-            ВКА им Можайского
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 16px;
-              font-family: Open Sans;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
-            2015 - 2020
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 16px;
-              font-family: Open Sans;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
-            инжнерно криптографический анализ
-          </div>
+        <div class="card_small">
+          <div class="title">Образование</div>
+          <div class="text" style="font-weight: 600">ВКА им Можайского</div>
+          <div class="text">2015 - 2020</div>
+          <div class="text">инжнерно криптографический анализ</div>
         </div>
-        <div
-          style="
-            align-self: stretch;
-            height: wrap-content;
-            padding: 16px;
-            background: #28292a;
-            border-radius: 16px;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 16px;
-            display: flex;
-          "
-        >
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 20px;
-              font-family: Open Sans;
-              font-weight: 700;
-              word-wrap: break-word;
-            "
-          >
-            Стек
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 16px;
-              font-family: JetBrains Mono;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
+        <div class="card_small">
+          <div class="title">Стек</div>
+          <div class="code">
             Java, Kotlin<br />Compose, KMP<br />MVVM, MVI<br />Dagger2, Coil,
             HIlt<br />Coroutines, Flow<br />ExoPlayer<br />CameraX, MLKit,
             Maps<br />Room<br />Retofit, Ktor
           </div>
         </div>
-        <div
-          style="
-            align-self: stretch;
-            height: wrap-content;
-            padding: 16px;
-            background: #28292a;
-            border-radius: 16px;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 16px;
-            display: flex;
-          "
-        >
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 20px;
-              font-family: Open Sans;
-              font-weight: 700;
-              word-wrap: break-word;
-            "
-          >
-            Навыки
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 16px;
-              font-family: JetBrains Mono;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
+        <div class="card_small">
+          <div style="align-self: stretch" class="title">Навыки</div>
+          <div style="align-self: stretch" class="code">
             Английский (FCE)<br />Rust<br />ci/cd<br />Linux<br />Криптография
           </div>
         </div>
@@ -393,167 +211,43 @@
         style="
           flex: 1 1 0;
           flex-direction: column;
-          justify-content: flex-start;
           align-items: flex-start;
           gap: 16px;
           display: inline-flex;
         "
       >
         <div
-          style="
-            align-self: stretch;
-            height: wrap-content;
-            padding: 16px;
-            background: #28292a;
-            border-radius: 16px;
-            border: 1px rgba(255, 255, 255, 0.5) solid;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 16px;
-            display: flex;
-          "
+          class="card_big"
+          style="border: 1px rgba(255, 255, 255, 0.5) solid"
         >
-          <div
-            style="
-              align-self: stretch;
-              justify-content: flex-start;
-              align-items: flex-start;
-              gap: 8px;
-              display: inline-flex;
-            "
-          >
+          <div class="icon_text">
             <img style="width: 32px; height: 32px" src="ic_android_dev.png" />
-            <div
-              style="
-                flex: 1 1 0;
-                align-self: stretch;
-                color: white;
-                font-size: 24px;
-                font-family: Open Sans;
-                font-weight: 700;
-                word-wrap: break-word;
-              "
-            >
+            <div class="title" style="font-size: 24px">
               Степанюк Илья Александрович
             </div>
           </div>
-          <div
-            style="
-              align-self: stretch;
-              height: 33px;
-              color: white;
-              font-size: 20px;
-              font-family: Open Sans;
-              font-weight: 600;
-              word-wrap: break-word;
-            "
-          >
+          <div class="title" style="font-weight: 600">
             Senior / Tech Lead Android Developer
           </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 16px;
-              font-family: Open Sans;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
+          <div class="text">
             Андроид разработчик с опытом построения сложных интерфейсов и
             анимаций, менеджмента команд и проектировании архитектурных решений
             проекта.
             <br />Выступаю за открытость принимаемых решений и шаринг знаний.
           </div>
-          <div
-            style="
-              align-self: stretch;
-              height: 33px;
-              color: white;
-              font-size: 14px;
-              font-family: Open Sans;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
-            Санкт-Петербург, 27 лет
-          </div>
+          <div class="caption">Санкт-Петербург, 27 лет</div>
         </div>
-        <div
-          style="
-            align-self: stretch;
-            height: wrap-content;
-            padding: 16px;
-            background: #28292a;
-            border-radius: 10px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 16px;
-            display: flex;
-          "
-        >
-          <div
-            style="
-              align-self: stretch;
-              justify-content: flex-start;
-              align-items: center;
-              gap: 8px;
-              display: inline-flex;
-            "
-          >
+        <div class="card_big">
+          <div class="icon_text">
             <img
               style="width: 32px; height: 32px; border-radius: 6px"
               src="ic_yappy.png"
             />
-            <div
-              style="
-                flex: 1 1 0;
-                color: white;
-                font-size: 20px;
-                font-family: Open Sans;
-                font-weight: 700;
-                word-wrap: break-word;
-              "
-            >
-              Yappy
-            </div>
+            <div class="title">Yappy</div>
           </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 20px;
-              font-family: Inter;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
-            Senior Android developer - Tech Lead
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 16px;
-              font-family: Open Sans;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
-            2022 - н.в.
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 16px;
-              font-family: Open Sans;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
+          <div class="subtitle">Senior Android developer - Tech Lead</div>
+          <div class="text">2022 - н.в.</div>
+          <div class="text">
             Tech lead команды Core проекта: Архитектурные решения, проблемы
             perfomance, сервисы аналитики, общие компоненты проекта.<br /><br />Бизнес
             команда: Работа с плеером, различными видами кеширования, главная
@@ -563,77 +257,14 @@
             том числе создание собственной библиотеки графика проекта на Canvas.
           </div>
         </div>
-        <div
-          style="
-            align-self: stretch;
-            height: wrap-content;
-            padding: 16px;
-            background: #28292a;
-            border-radius: 16px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 16px;
-            display: flex;
-          "
-        >
-          <div
-            style="
-              align-self: stretch;
-              justify-content: flex-start;
-              align-items: center;
-              gap: 8px;
-              display: inline-flex;
-            "
-          >
+        <div class="card_big">
+          <div class="icon_text">
             <img style="width: 32px; height: 32px" src="ic_geht_soft.png" />
-            <div
-              style="
-                flex: 1 1 0;
-                color: white;
-                font-size: 20px;
-                font-family: Open Sans;
-                font-weight: 700;
-                word-wrap: break-word;
-              "
-            >
-              Gehtsoft
-            </div>
+            <div class="title">Gehtsoft</div>
           </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 20px;
-              font-family: Inter;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
-            Middle Android developer
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 16px;
-              font-family: Open Sans;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
-            2020 - 2022
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              color: rgba(255, 255, 255, 0.9);
-              font-size: 16px;
-              font-family: Open Sans;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
+          <div class="subtitle">Middle Android developer</div>
+          <div class="text">2020 - 2022</div>
+          <div class="text">
             Ведущий Android разработчик проекта. <br /><br />В обязанности
             входило повышение качества продукта, устранение багов, покрытие
             тестами, настройка ci/cd, повышение безопасности продукта.<br />
@@ -643,54 +274,10 @@
             Java.<br />Интегрировал в проект Dagger2, rxJava и Room.
           </div>
         </div>
-        <div
-          style="
-            align-self: stretch;
-            height: wrap-content;
-            padding: 16px;
-            background: #28292a;
-            border-radius: 16px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 16px;
-            display: flex;
-          "
-        >
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 20px;
-              font-family: Open Sans;
-              font-weight: 700;
-              word-wrap: break-word;
-            "
-          >
-            Individual Entrepreneur Android developer
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 16px;
-              font-family: Open Sans;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
-            2018 - 2020
-          </div>
-          <div
-            style="
-              align-self: stretch;
-              color: white;
-              font-size: 16px;
-              font-family: Open Sans;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
+        <div class="card_big">
+          <div class="title">Individual Entrepreneur Android developer</div>
+          <div class="text">2018 - 2020</div>
+          <div class="text">
             Разработка проектов на freelance.<br /><br />Приложение для службы
             такси:<br />Maps, Firebase, Realtime database для чатов.
             <br />Функционал оставления маркера на карте, их выгрузка в Firebase
