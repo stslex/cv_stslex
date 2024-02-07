@@ -17,6 +17,7 @@
 
       .title {
         align-self: stretch;
+        width: 100%;
         color: white;
         font-size: 20px;
         font-family: open_sans_regular;
@@ -154,7 +155,7 @@
               href="https://play.google.com/store/apps/dev?id=8790856954691512377"
               class="text_link"
             >
-              play market
+              Play market
             </a>
           </div>
           <div class="icon_text">
@@ -176,7 +177,7 @@
               LinkedIn
             </a>
           </div>
-          <div class="icon_text_small">
+          <div class="icon_text">
             <img
               style="width: 24px; height: 24px; position: relative"
               src="ic_gmail.svg"
@@ -189,8 +190,8 @@
         <div class="card_small">
           <div class="title">Образование</div>
           <div class="text" style="font-weight: 600">ВКА им Можайского</div>
-          <div class="text">2015 - 2020</div>
-          <div class="text">инжнерно криптографический анализ</div>
+          <div class="text">2015 — 2020</div>
+          <div class="text">Инжнерно - криптографический анализ</div>
         </div>
         <div class="card_small">
           <div class="title">Стек</div>
@@ -216,15 +217,12 @@
           display: inline-flex;
         "
       >
-        <div
-          class="card_big"
-          style="border: 1px rgba(255, 255, 255, 0.5) solid"
-        >
+        <div class="card_big" style="background: #404242">
           <div class="icon_text">
-            <img style="width: 32px; height: 32px" src="ic_android_dev.png" />
             <div class="title" style="font-size: 24px">
               Степанюк Илья Александрович
             </div>
+            <img style="width: 32px; height: 32px" src="ic_android_dev.png" />
           </div>
           <div class="title" style="font-weight: 600">
             Senior / Tech Lead Android Developer
@@ -245,45 +243,62 @@
             />
             <div class="title">Yappy</div>
           </div>
-          <div class="subtitle">Senior Android developer - Tech Lead</div>
-          <div class="text">2022 - н.в.</div>
+          <div class="subtitle">Senior Android developer / Tech Lead</div>
+          <div class="text">2022 — н.в.</div>
           <div class="text">
-            Tech lead команды Core проекта: Архитектурные решения, проблемы
+            <a class="code">Tech lead</a> команды
+            <a class="code">Core</a> проекта: Архитектурные решения, проблемы
             perfomance, сервисы аналитики, общие компоненты проекта.<br /><br />Бизнес
             команда: Работа с плеером, различными видами кеширования, главная
             лента приложения, участие в разработке чата. <br /><br />Интеграция
             в приложение Compose, шаринг знаний по этому фреймворку, внутренние
             доклады. <br /><br />Тесно работал со сложными UI компонентами, в
-            том числе создание собственной библиотеки графика проекта на Canvas.
+            том числе создание собственной библиотеки графика проекта на
+            <a class="code">Canvas</a>.
           </div>
         </div>
         <div class="card_big">
           <div class="icon_text">
-            <img style="width: 32px; height: 32px" src="ic_geht_soft.png" />
+            <img
+              style="width: 32px; height: 32px; border-radius: 6px"
+              src="ic_geht_soft.jpg"
+            />
             <div class="title">Gehtsoft</div>
           </div>
           <div class="subtitle">Middle Android developer</div>
-          <div class="text">2020 - 2022</div>
+          <div class="text">2020 — 2022</div>
           <div class="text">
             Ведущий Android разработчик проекта. <br /><br />В обязанности
             входило повышение качества продукта, устранение багов, покрытие
-            тестами, настройка ci/cd, повышение безопасности продукта.<br />
+            тестами, настройка <a class="code">ci/cd</a>, повышение безопасности
+            продукта.<br />
             <br />В приложении большое количество графиков, тесная работа с
-            Canvas и написание кастомных View элементов.<br /><br />Приложение
-            легаси - большой опыт работы с Thread, handler, Looper и чистой
-            Java.<br />Интегрировал в проект Dagger2, rxJava и Room.
+            Canvas и написание кастомных
+            <a class="code">View</a> элементов.<br /><br />Приложение легаси -
+            большой опыт работы с <a class="code">Thread, Handler, Looper</a> и
+            чистой <a class="code">Java</a>.<br />Интегрировал в проект
+            <a class="code">Dagger2, rxJava, Room</a>.
           </div>
         </div>
         <div class="card_big">
-          <div class="title">Individual Entrepreneur Android developer</div>
-          <div class="text">2018 - 2020</div>
+          <div class="title">Фриланс Android developer</div>
+          <div class="text">2018 — 2020</div>
           <div class="text">
-            Разработка проектов на freelance.<br /><br />Приложение для службы
-            такси:<br />Maps, Firebase, Realtime database для чатов.
-            <br />Функционал оставления маркера на карте, их выгрузка в Firebase
-            и возможность открыть чат по созданному маркеру.<br /><br />Приложение
-            для завода по распознаванию изделий и формирование отчета из
-            отсканированной информации.<br />MLKit, CameraX.
+            Корпоративное приложение риложение для службы такси:<br />
+            Таксист имеет возможность отметить свое местоположение для других
+            водителей на карте и открыть чат с возможностью какого-либо диалога.
+            <br />
+            <a class="code">Maps, Firebase, Realtime database</a> для чатов.
+            Функционал оставления маркера на карте, их выгрузка в Firebase и
+            возможность открыть чат по созданному маркеру. <br /><br />
+
+            Корпоративное приложение по распознаванию изделий и формированию
+            отчета из отсканированной информации для предприятия, производящего
+            промышленные детали. <br />
+            Убирает необходимость у рабочих в заполнении документации и
+            переписывании всех серийных номеров изделий в ручную (большой риск
+            ошибки). <br />
+            Стек: <a class="code">MLKit, CameraX</a>.
           </div>
         </div>
       </div>
